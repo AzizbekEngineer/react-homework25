@@ -1,0 +1,48 @@
+.header {
+    padding: 15px 0;
+
+    background: #ddd;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        height: 35px;
+        background: white;
+
+        input {
+            padding: 5px 15px;
+            border: none;
+            outline: none;
+            flex: 1;
+            height: 100%s;
+        }
+    }
+
+    &__search__icon {
+        font-size: 25px;
+    }
+
+    &__item,
+    &__logo {
+        color: black;
+
+        a {
+            color: inherit;
+        }
+    }
+}
