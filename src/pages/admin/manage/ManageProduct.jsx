@@ -41,7 +41,7 @@ const ManageProduct = () => {
               <p>Category: {el?.category}</p>
               <div className="product__buttons">
                 <button
-                  className="product__like__btn"
+                  className="product__likes__btn"
                   onClick={() => dispatch(like(el))}
                 >
                   {wishlistData.some((item) => item.id === el.id) ? (

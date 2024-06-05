@@ -45,6 +45,7 @@ const CreateProduct = () => {
         <div className="form__card">
           <label htmlFor="name">Product Title:</label>
           <input
+            required
             id="name"
             name="title"
             value={formData.title}
@@ -56,6 +57,7 @@ const CreateProduct = () => {
         <div className="form__card">
           <label htmlFor="price">Product Price:</label>
           <input
+            required
             id="price"
             value={formData.price}
             name="price"
@@ -67,6 +69,7 @@ const CreateProduct = () => {
         <div className="form__card">
           <label htmlFor="url">Product URL:</label>
           <input
+            required
             id="url"
             name="url"
             value={formData.url}
@@ -78,6 +81,7 @@ const CreateProduct = () => {
         <div className="form__card">
           <label htmlFor="desc">Product Category:</label>
           <input
+            required
             id="desc"
             name="category"
             value={formData.category}

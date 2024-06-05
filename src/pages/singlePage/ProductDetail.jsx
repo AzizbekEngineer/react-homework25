@@ -1,6 +1,6 @@
 import React from "react";
 import { useGetDetailQuery } from "../../context/api/productApi";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 import "./singlePage.scss";
@@ -27,12 +27,18 @@ const ProductDetail = () => {
         <p>Price: {data?.price}</p>
         <p>Category: {data?.category}</p>
         <div className="productDetail__btn">
-          <button onClick={() => dispatch(like(data))}>
+          <button
+            className="productDetail__like__btn"
+            onClick={() => dispatch(like(data))}
+          >
             {wishlistData.some((item) => item.id === data?.id) ? (
               <FaHeart color="crimson" />
             ) : (
               <FaRegHeart />
             )}
+          </button>
+          <button className="productDetail__back__btn">
+            <Link to="/">Back to home</Link>
           </button>
         </div>
       </div>

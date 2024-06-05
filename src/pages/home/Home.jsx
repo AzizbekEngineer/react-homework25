@@ -31,7 +31,10 @@ const Home = () => {
               <h3>Price:{el?.price}$</h3>
               <p>Category:{el?.category}</p>
               <div className="product__buttons">
-                <button onClick={() => dispatch(like(el))}>
+                <button
+                  className="product__like__bnt"
+                  onClick={() => dispatch(like(el))}
+                >
                   {wishlistData.some((item) => item.id === el.id) ? (
                     <FaHeart color="crimson" />
                   ) : (
